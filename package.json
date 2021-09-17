@@ -1,0 +1,16 @@
+{
+  "name": "diagnostics-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "author": "Amin M.",
+  "license": "ISC",
+  "dependencies": {
+    "dayjs": "^1.10.7",
+    "express": "^4.17.1",
+    "file-system": "^2.2.2"
+  }
+}
