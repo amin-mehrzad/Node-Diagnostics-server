@@ -45,7 +45,8 @@ app.post('/', (req, res, next) => {   /// heartbeat
   if (req.body != undefined && req.body.length == 1 && req.body[0].h) {
     //let responseBody = { UTC: Math.floor((new Date).getTime() / 1000) }
     // let responseBody = { msg: "" }
-    let responseBody = { UTC: Math.floor((new Date).getTime() / 1000) }
+    //let responseBody = { UTC: Math.floor((new Date).getTime() / 1000) }
+    let responseBody = { "msg" :"Report"}
     fs.writeFile('./logs/office-hub.log', `${dayjs().format()} ( ${Math.floor(Date.now() / 1000)} ) :    ${JSON.stringify(req.body)} \r\n`, { flag: 'a' }, function (err) { })
     console.log(req.body)
     setTimeout(() => {
